@@ -1,0 +1,33 @@
+# --- ERLANG & BEAM ---
+# Skompilowane pliki binarne
+*.beam
+# Pliki zrzutu pamięci po awarii (bardzo częste w Erlangu)
+erl_crash.dump
+# Pliki wykonywalne generowane przez escript
+*.escript
+
+# --- NARZĘDZIA BUDOWANIA (Rebar3 / Mix) ---
+# Główny katalog z artefaktami budowania i zależnościami
+_build/
+# Katalogi tymczasowe starszych wersji rebar
+.rebar/
+.rebar3/
+# Plik blokady wersji (opcjonalnie usuń tę linię, jeśli chcesz współdzielić wersje bibliotek z zespołem)
+rebar.lock
+
+# --- ANALIZA KODU (Dialyzer) ---
+# Pliki trwałych tablic wyszukiwania (ogromne pliki binarne)
+*.plt
+*.plt.bak
+
+# --- ŚRODOWISKA PROGRAMISTYCZNE (IDE) ---
+# IntelliJ IDEA (pliki .iml i folder konfiguracji .idea)
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# --- SYSTEMOWE ---
+.DS_Store
+Thumbs.db
